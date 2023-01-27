@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Get Har</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Quicksand&display=swap" rel="stylesheet">
+
+    <script src="~/lib/jquery/dist/jquery.min.js" ></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <span><img src="~/images/Vector1.png" alt="image" class="vector_img" /></span>
+        <span><img src="~/images/Saly-12.png" alt="image" class="sally_img" /></span>
+        <span><img src="~/images/logo.png" alt="image" class="logo_img" /></span>
+        <div class="text-center align-center">
+
+            <ul class="top_nav">
+                <li> <a href="/">Home</a></li>
+                <li> <a href="/Home/Contact">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-lg-3"></div>
+
+            <div class="jumbotron  col-md-4 col-xs-12 col-lg-6">
+
+                <div class="text-center themecolor-text">
+                    Contact
+                </div>
+
+                Leave us a message
+                <div class="text-center">
+                    <form>
+                        <div class="form-inputs">
+                            <input type="text" class="form-control" required="" name="topic" id="topic" placeholder="Topic">
+                        </div>
+                        <div class="form-inputs">
+                            <input type="text" class="form-control" required="" name="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-inputs">
+                            <textarea class="form-control" required="" name="content" id="content" placeholder="message content" rows="4"></textarea>
+                        </div>
+
+                    </form>
+                    <p>
+                        <button type="button" id="btn_create_user" class="btn btn-primary align-left" onclick="create_user();">
+                            Send
+                        </button>
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3"></div>
+
+        </div>
+
+
+
+
+    </div>
+
+    <div class="rectangles">
+
+        <span class="">
+            <img src="~/images/rectanges.png" alt="image" class="rectangles_hanging">
+        </span>
+    </div>
+
+    <div class="footer1">
+    </div>
+    <div class="footer2">
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,205 @@
+﻿<div class="row">
+    <div class="col-md-2 col-lg-2">
+    </div>
+    <div class="jumbotron order_info col-md-8 col-xs-12 col-lg-8">
+
+
+        <div class="text-center ">
+            <h2><b>Order information</b> </h2>
+        </div>
+
+
+        <div class="text-center">
+            <form class="">
+                <div class="row form-inputs">
+
+                    <div class="checkbox col-md-6 col-lg-6">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            I have power of the attorney from client
+                        </label>
+                    </div>
+                    <div class="checkbox col-md-6 col-lg-6">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Customer signature is required
+                        </label>
+                    </div>
+                </div>
+                <div class="row form-inputs">
+                    <div class=" col-md-6 col-lg-6">
+                        Enter Mobile No. to send SMS signature
+                    </div>
+
+                    <div class=" col-md-6 col-lg-6">
+                        <input type="text" class="form-control" required="" name="phone" id="phone" placeholder="phone number">
+                    </div>
+
+                </div>
+                <hr>
+                <p>Customer details:</p>
+
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label">Private : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="private" name="private" type="text" value="">
+                    </div>
+                    <label class="col-sm-2 control-label">Family : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="family" name="family" type="text" value="">
+                    </div>
+                </div>
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label">ID : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="id_number" name="id_number" type="text" value="">
+                    </div>
+                    <label class="col-sm-2 control-label">Date Issued : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="date_issued" name="date_issued" type="date" value="">
+                    </div>
+                </div>
+
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label">Date of Birth : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="dob" name="dob" type="date" value="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label ">Car Number: </label>
+                    <div class="col-sm-4">
+                        <input class="form-control cars" type="text" value="">
+                    </div>
+                    <br><br>
+
+                    <div id="car_holders">
+                    </div>
+                    <button type="button" class="btn btn-sm" onclick="add_cars_fields()"><i class="fa fa-plus" aria-hidden="true"></i> </button>
+                </div>
+
+                <div class="row children">
+
+                    <label class="col-sm-2 control-label">Child: </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="child" name="child" type="text" value="">
+                    </div>
+
+                    <label class="col-sm-2 control-label">Birth: </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="birth" name="birth" type="date" value="">
+                    </div>
+                </div>
+                <br>
+                <div id="child_holders">
+                </div>
+                <button type="button" class="btn btn-sm" onclick="add_child_fields()"><i class="fa fa-plus" aria-hidden="true"></i> </button>
+
+                <hr>
+
+            </form>
+        </div>
+
+
+         
+        <h3>Spouse Information</h3>
+
+        <div class="text-center" >
+            <form class="">
+                <div class="row form-inputs">
+
+                    <div class="checkbox col-md-6 col-lg-6">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            I have power of the attorney from client
+                        </label>
+                    </div>
+                    <div class="checkbox col-md-6 col-lg-6">
+                        <label class="checkbox-inline">
+                            <input type="checkbox" value="">
+                            Customer signature is required
+                        </label>
+                    </div>
+                </div>
+                <div class="row form-inputs">
+                    <div class=" col-md-6 col-lg-6">
+                        Enter Mobile No. to send SMS signature
+                    </div>
+
+                    <div class=" col-md-6 col-lg-6">
+                        <input type="text" class="form-control" required="" name="phone" id="phone" placeholder="phone number">
+                    </div>
+
+                </div>
+                <hr>
+                <p>Customer details:</p>
+
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label">Private : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="spouse_private" name="private" type="text" value="">
+                    </div>
+                    <label class="col-sm-2 control-label">Family : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="spouse_family" name="family" type="text" value="">
+                    </div>
+                </div>
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label">ID : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="spouse_id_number" name="spouse_id_number" type="text" value="">
+                    </div>
+                    <label class="col-sm-2 control-label">Date Issued : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="spouse_date_issued" name="spouse_date_issued" type="date" value="">
+                    </div>
+                </div>
+
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label">Date of Birth : </label>
+                    <div class="col-sm-4">
+                        <input class="form-control" id="spouse_dob" name="spouse_dob" type="date" value="">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row form-inputs">
+                    <label class="col-sm-2 control-label ">Car Number: </label>
+                    <div class="col-sm-4">
+                        <input class="form-control spouse_cars" type="text" value="">
+                    </div>
+                    <br><br>
+
+                    <div id="spouse_car_holders">
+                    </div>
+                    <button type="button" class="btn btn-sm" onclick="add_spouse_cars_fields()"><i class="fa fa-plus" aria-hidden="true"></i> </button>
+                </div>
+                <hr>
+
+                
+            </form>
+
+            <div class="row">
+            <div class="col-sm-4">
+                <button type="button" id="submit" class="btn btn-default align-left">
+                    Submit For Customer Approval
+                </button>
+            </div>
+
+        </div>
+        </div>
+
+
+        
+
+
+
+
+
+
+    </div>
+</div>
